@@ -16,4 +16,4 @@ Para darle un toque profesional al proyecto, se ha creado un nombre y un logo si
 
 Además, en este trabajo se teoriza sobre el proceso de gestión del proyecto utilizando las metodologías ágiles que se han estudiado en el curso, como Kanban y Scrum. Estas metodologías permitirán a VentaTech Argentina llevar un control efectivo de sus tareas y proyectos futuros.
 
-Toda la documentación relacionada con este proyecto se encuentra disponible en el siguiente repositorio GitHub: https://github.com/Geniateka/TPFinalVentaTech
+Toda la documentación relacionada con este proyecto se encuentra disponible en el siguiente repositorio GitHub: [https://github.com/dmarianon/TPFinalVentaTech](https://github.com/Dmarianon/TPFinalFullcoders.git)https://github.com/Dmarianon/TPFinalFullcoders.git
