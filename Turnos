@@ -1,0 +1,97 @@
+Algoritmo turnoProducto
+	Definir turnoLunesManana, turnoLunesTarde, turnoMartesManana, turnoMartesTarde como Cadena
+	Definir producto1, producto2, producto3 como Cadena
+	Definir opcionMenu como Entero
+
+	turnoLunesManana <- ""
+	turnoLunesTarde <- ""
+	turnoMartesManana <- ""
+	turnoMartesTarde <- ""
+	producto1 <- ""
+	producto2 <- ""
+	producto3 <- ""
+
+	Escribir "+--------------------------------------------------------------------+"
+	Escribir "| Bienvenido al sistema de Ventatech - Reserva de Turnos y Carga de    |"
+	Escribir "| Productos. Este pseudocódigo muestra el funcionamiento del sistema |"
+	Escribir "| de reserva de turnos y el ingreso de productos para una tienda de   |"
+	Escribir "| computadoras.                                                       |"
+	Escribir "+--------------------------------------------------------------------+"
+
+	Repetir
+		Mostrar "1. Reservar turno"
+		Mostrar "2. Cargar producto"
+		Mostrar "0. Salir"
+		Leer opcionMenu
+
+		Si opcionMenu = 1 Entonces
+			Mostrar "Seleccione el día para el turno (1: Lunes, 2: Martes):"
+			Leer diaElegido
+
+			Mostrar "Seleccione la parte del día (1: Mañana, 2: Tarde):"
+			Leer parteDelDia
+
+			Si diaElegido = 1 Entonces
+				Si parteDelDia = 1 Entonces
+					Si turnoLunesManana = "" Entonces
+						turnoLunesManana <- "Reservado"
+						Mostrar "Turno reservado exitosamente."
+					Sino
+						Mostrar "El turno seleccionado ya está ocupado. Por favor, elija otro."
+					Fin Si
+				Sino Si parteDelDia = 2 Entonces
+					Si turnoLunesTarde = "" Entonces
+						turnoLunesTarde <- "Reservado"
+						Mostrar "Turno reservado exitosamente."
+					Sino
+						Mostrar "El turno seleccionado ya está ocupado. Por favor, elija otro."
+					Fin Si
+				Fin Si
+			Sino Si diaElegido = 2 Entonces
+				Si parteDelDia = 1 Entonces
+					Si turnoMartesManana = "" Entonces
+						turnoMartesManana <- "Reservado"
+						Mostrar "Turno reservado exitosamente."
+					Sino
+						Mostrar "El turno seleccionado ya está ocupado. Por favor, elija otro."
+					Fin Si
+				Sino Si parteDelDia = 2 Entonces
+					Si turnoMartesTarde = "" Entonces
+						turnoMartesTarde <- "Reservado"
+						Mostrar "Turno reservado exitosamente."
+					Sino
+						Mostrar "El turno seleccionado ya está ocupado. Por favor, elija otro."
+					Fin Si
+				Fin Si
+			Fin Si
+		Fin Si
+
+		Si opcionMenu = 2 Entonces
+			Mostrar "Ingrese el nombre del producto:"
+			Leer nombreProducto
+
+			Si producto1 = "" Entonces
+				producto1 <- nombreProducto
+			Sino Si producto2 = "" Entonces
+				producto2 <- nombreProducto
+			Sino Si producto3 = "" Entonces
+				producto3 <- nombreProducto
+			Sino
+				Mostrar "Ya se han ingresado tres productos. No se pueden agregar más."
+			Fin Si
+		Fin Si
+	Hasta que opcionMenu = 0
+
+	// Mostrar información al finalizar
+	Escribir "Resumen de turnos reservados:"
+	Escribir "Lunes Mañana: ", turnoLunesManana
+	Escribir "Lunes Tarde: ", turnoLunesTarde
+	Escribir "Martes Mañana: ", turnoMartesManana
+	Escribir "Martes Tarde: ", turnoMartesTarde
+
+	Escribir "Productos en el catálogo:"
+	Escribir "Producto 1: ", producto1
+	Escribir "Producto 2: ", producto2
+	Escribir "Producto 3: ", producto3
+
+Fin Algoritmo
