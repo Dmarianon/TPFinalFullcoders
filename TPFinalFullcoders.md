@@ -3,11 +3,11 @@ Resumen de la entrega:
 Cabecera:
 VentaTech Argentina
 Curso de Desarrollo de Sistemas
-Comisión x-xxxxx
+Comisión 16/2165
 Agosto 2023
 Proyecto: Sistema de Gestión de Ventas
 Estudiante: Diego Nuñez – DNI 32738382
-Tutor/a: xxxxxxxxxxxxxx
+Tutor/a: Romina Bitencort
 
 Cuerpo:
 El presente trabajo tiene como objetivo simular las necesidades de una casa de venta de computación, "VentaTech Argentina", que busca mejorar su eficiencia en la gestión de ventas y la administración de su inventario. En este proyecto introductorio, se presenta un diagrama de flujo general, un pseudocódigo que simula el proceso de ventas y la gestión de productos.
